@@ -1,0 +1,96 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 2rem;
+
+  .friend-container {
+    display: flex;
+    gap: 1rem;
+
+    .friend-profile {
+      width: 7rem;
+      height: 7rem;
+      background-color: rgb(70, 175, 245);
+      border-radius: 1rem;
+    }
+
+    .friend-name-number-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      font-size: 1.6rem;
+
+      .number {
+        color: #414141;
+      }
+    }
+  }
+}
+
+.chat-room {
+  flex: 1;
+  background-color: rgb(70, 175, 245);
+  padding: 2rem;
+
+  .chat {
+    position: relative;
+    width: 20rem;
+    height: 6rem;
+    background-color: white;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: -1.5rem;
+      border-top: 1.5rem solid white;
+      border-left: 1.5rem solid transparent;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  height: 10rem;
+
+  textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  button {
+    background-color: rgb(70, 175, 245);
+    border-radius: 1rem;
+    width: 10rem;
+    height: 10rem;
+
+    &:active {
+      background-color: rgb(51, 141, 201);
+    }
+  }
+}

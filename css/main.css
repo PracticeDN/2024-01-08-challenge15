@@ -1,0 +1,88 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 2rem;
+}
+.header .friend-container {
+  display: flex;
+  gap: 1rem;
+}
+.header .friend-container .friend-profile {
+  width: 7rem;
+  height: 7rem;
+  background-color: rgb(70, 175, 245);
+  border-radius: 1rem;
+}
+.header .friend-container .friend-name-number-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+}
+.header .friend-container .friend-name-number-container .number {
+  color: #414141;
+}
+
+.chat-room {
+  flex: 1;
+  background-color: rgb(70, 175, 245);
+  padding: 2rem;
+}
+.chat-room .chat {
+  position: relative;
+  width: 20rem;
+  height: 6rem;
+  background-color: white;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+.chat-room .chat::before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: -1.5rem;
+  border-top: 1.5rem solid white;
+  border-left: 1.5rem solid transparent;
+}
+
+.form {
+  display: flex;
+  height: 10rem;
+}
+.form textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+}
+.form textarea:focus {
+  outline: none;
+}
+.form button {
+  background-color: rgb(70, 175, 245);
+  border-radius: 1rem;
+  width: 10rem;
+  height: 10rem;
+}
+.form button:active {
+  background-color: rgb(51, 141, 201);
+}
+
+/*# sourceMappingURL=main.css.map */
